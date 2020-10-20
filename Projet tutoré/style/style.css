@@ -1,0 +1,563 @@
+body {
+	width: 100%;
+	margin: auto;
+	font-family: Arial;
+	background-color: #EEEEEE;
+}
+header, footer {
+	width: 100%;
+	background-image: -webkit-linear-gradient(top left, #f22613, #e6210e, #db1c08, #cf1704, #c41100);
+	background-image: -o-linear-gradient(top left, #f22613, #e6210e, #db1c08, #cf1704, #c41100);
+	background-image: linear-gradient(to bottom right, #f22613, #e6210e, #db1c08, #cf1704, #c41100);
+}
+section, header .interieur, footer .interieur {
+	width: 75%;
+	margin: auto;
+	vertical-align: center;
+}
+header {
+	margin-bottom: 30px;
+}
+header .interieur img {
+	display: inline-block;
+	width: auto;
+}
+header .interieur img, header .interieur nav {
+	height: 100px;
+}
+header .interieur nav {
+	float : right;
+}
+header .interieur nav ul {
+	vertical-align: center;
+	margin-top: 38px;
+	list-style: none;
+	margin-left: 0;
+	padding: 0;
+	border-left: 3px solid #333333;
+}
+header .interieur nav ul li {
+	display: inline-block;
+	border-right: 3px solid #333333;
+	margin: 0;
+	transition: all 0.3s;
+}
+header .interieur nav ul li a {
+	display: inline-block;
+	font-size : 1em;
+	color: #333333;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+	font-variant: small-caps;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+header .interieur nav ul li:hover {
+	background-color: #333333;
+}
+header .interieur nav ul li a:hover {
+	color: white;
+}
+header .interieur nav ul li ul{
+	display: none;
+	position: absolute;
+	margin:0;
+	padding:0;
+	z-index:7;
+	margin-left:-3px;
+	width:300px;
+}
+
+header .interieur nav ul li ul *{
+	display:inline-block;
+
+}
+
+header .interieur nav ul li ul li{
+	padding:0;
+	margin:0;
+}
+
+header .interieur nav ul li ul li:not(#dernier){
+	border-bottom:2px solid white;
+}
+
+header .interieur nav ul li ul li a{
+	margin:0;
+	font-size: 0.75em;
+	padding-bottom: 10px;
+	padding-top:10px;
+}
+
+header .interieur nav ul li ul li a:hover{
+	background-color: rgb(100,100,100);
+}
+
+header .interieur nav ul li:hover *{
+color: white;
+}
+header .interieur nav ul li:hover ul, header .interieur nav ul li ul:hover{
+	display: block;
+	background-color: #333333;
+}
+
+header .interieur nav ul li ul:hover{
+
+}
+
+section #vraiArticle #miniature {
+	display: none;
+}
+section {
+	background-color: #ffffff;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+/*Je ne souhaite pas mettre de padding sur les côtés dans section pour que le logo et le nav soient bien alignés avec les côtés de header*/
+section article {
+	display: inline-block;
+	margin-left: 35px;
+	margin-right: 10px;
+}
+section article h1 {
+	text-align: center;
+	font-weight: bold;
+}
+section article h2 {
+	font-weight: bold;
+	font-size: 1.15em;
+	text-align: left;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+section article p {
+	font-size: 0.8em;
+	font-weight: normal;
+	margin-bottom: 25px;
+	text-align: justify;
+}
+section article a {
+	font-size: 0.8em;
+	color: blue;
+	text-decoration: none;
+	font-weight: bold;
+}
+section #vraiArticle {
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 5%;
+	width: 65%;
+}
+section #asideArticle {
+	display: inline-block;
+	width: 20%;
+	float: right;
+	margin-top: 30px;
+	margin-right: 5%;
+	background-color: #706B64;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+}
+section #asideArticle h1 {
+	text-align: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid white;
+}
+section #asideArticle ul {
+	padding-left: 20px;
+}
+section #asideArticle ul li {
+	line-height: 0.9em;
+	margin-bottom: 10px;
+}
+section #asideArticle ul li a {
+	font-weight: bold;
+	font-size: 0.9em;
+	text-decoration: none;
+	color: white;
+}
+section #asideArticle ul li a:hover {
+	color: rgb(50,50,50);
+}
+section #vraiArticle img {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+section #vraiArticle figcaption {
+	font-style: italic;
+	font-size: 0.9em;
+}
+section #vraiArticle figure {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+section #vraiArticle h1 {
+	font-variant: small-caps;
+	font-size: 1.65em;
+	margin-bottom: 40px;
+}
+section #vraiArticle #source {
+	font-weight: bold;
+}
+section #articleIndex {
+	width: 60%;
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+section #articleIndex figure {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+section #articleIndex a {
+	display: block;
+	text-align: center;
+}
+section #articleIndex h1 {
+	font-variant: small-caps;
+}
+section #articleIndex figcaption {
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	position: relative;
+	background: orange;
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-top: -30px;
+	top: -10px;
+}
+#equipePage {
+	text-align: center;
+}
+#equipePage h1 {
+	font-variant: small-caps;
+	text-align: center;
+	margin-bottom: 40px;
+}
+#equipePage #blocmembres {
+	display: inline-block;
+	margin: auto;
+	margin-left: -3%;
+	margin-bottom: 30px;
+}
+#equipePage #blocmembres .membre {
+	display: inline-block;
+	width: 25%;
+	margin-left: 3%;
+	vertical-align: top;
+	-webkit-animation: slide-in-bck-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-bck-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#equipePage #blocmembres .membre h2 {
+	font-variant: small-caps;
+	font-size: 1.2em;
+}
+#equipePage #blocmembres .membre p {
+	font-size: 0.9em;
+}
+#equipePage #blocmembres .membre img {
+	/*Astuce pour l'image ronde tirée de ce tutoriel http://www.debray-jerome.fr/articles/Images-rondes-en-css3.html*/
+	overflow: hidden;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 75%;
+	height: 75%;
+	border: 2px solid #333333;
+}
+section article img {
+	width: 100%;
+}
+section aside {
+	display: inline-block;
+	margin-right: 10px;
+}
+section #grandeImage {
+	width: 90%;
+	margin-left: 5%;
+	font-size: 1em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+section #grandeImage h1 {
+	font-variant: small-caps;
+}
+section #grandeImage img {
+	display: inline-block;
+	width: 100%;
+	max-width: 900px;
+}
+section #navigationImg {
+	width: 90%;
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 20px;
+}
+section #navigationImg h2 {
+	width: 90%;
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-variant: small-caps;
+}
+section #navigationImg table {
+	display: inline-block;
+	margin: 0;
+}
+section #navigationImg table tr {
+	border: 2px solid blue;
+}
+section #navigationImg table tr td {
+	display: inline-block;
+	background-color: black;
+}
+section #navigationImg table tr td img {
+	width: 200px;
+	height: 115px;
+	vertical-align: middle;
+}
+section #navigationImg table tr td img:not(:hover) {
+	border: 2px solid black;
+}
+section #navigationImg table tr td img:hover {
+	border: 4px solid #535c68;
+}
+section #asideIndex {
+	width: 30%;
+	vertical-align: top;
+}
+section #asideIndex .suggestion {
+	display: block;
+	margin-bottom: 20px;
+	background-color: black;
+}
+section #asideIndex img {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+section #asideIndex .suggestion .bloctitre {
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	position: relative;
+	top: -5px;
+}
+section #asideIndex .suggestion .bloctitre h1 {
+	line-height: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+section #asideIndex .suggestion .bloctitre h1 a {
+	display: inline-block;
+	text-decoration : none;
+	color : white;
+	font-size: 0.7em;
+	margin: 0;
+	padding: 5px;
+	padding-top: 7px;
+	padding-bottom: 0px;
+}
+section #asideIndex .suggestion .bloctitre h1 a:hover {
+	color: rgb(100,100,100);
+}
+/*Cette manipulation inspirée de cet article :http://www.cefii.fr/blog/18-blog-cefii/d%C3%A9veloppement/50-astuce-html-css-fixer-footer-bas-page.html
+ *permet de fixer le footer en bas de page au cas où il y ai trop peu de contenu pour qu'il le soit naturellement sans le fixer absolument
+ */
+
+
+body, html {
+	height: 100%;
+}
+#main {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+#margefooter {
+	display: inline-block;
+	height: 70px;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: 50px;
+	height: 50px;
+}
+footer {
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+footer .interieur img {
+	height: 50px;
+	display: inline-block;
+	width: auto;
+}
+footer .interieur p {
+	color: #333333;
+	margin-top: 15px;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+}
+
+.btn-container {
+	margin: 0 auto;
+	width: 25%;
+}
+.customBtn {
+	background-color: #F22613;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	border-radius: 50px;
+	transition: all 0.4s;
+}
+.customBtn:hover {
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(181,24,9,1);
+	-moz-box-shadow: 0px 3px 0px 0px rgba(181,24,9,1);
+	box-shadow: 0px 3px 0px 0px rgba(181,24,9,1);
+}
+.big-image {
+	border-radius: 15px;
+}
+
+@media all and (max-width:1100px) {
+	.btn-container {
+		width: 40%;
+	}
+	header .interieur img, header .interieur nav {
+		height: 70px;
+	}
+	header .interieur nav ul {
+		margin-top: 30px;
+	}
+	header .interieur nav ul li a {
+		font-size : 0.95em;
+	}
+	section #articleIndex {
+		width: 55%;
+	}
+	header .interieur nav ul {
+		margin-top: 26px;
+	}
+	footer .interieur p {
+		float: none;
+		vertical-align: top;
+		display: inline-block;
+		width: 60%;
+		margin: 0;
+		margin-top: 7px;
+		margin-left: 20px;
+		font-size : 0.9em;
+	}
+}
+@media all and (max-width:875px) {
+	section, header .interieur, footer .interieur {
+		width: 100%;
+	}
+	header .interieur nav ul li ul{
+		width:200px;
+	}
+	header .interieur img, header .interieur nav {
+		height: 50px;
+	}
+	header .interieur nav ul {
+		margin-top: 20px;
+	}
+	header .interieur nav ul li a {
+		font-size : 0.9em;
+	}
+	section #asideArticle {
+		width: 60%;
+		float: none;
+		margin-left: 20%;
+		margin-bottom: 30px;
+	}
+	section #vraiArticle {
+		width: 90%;
+		margin-left: 5%;
+	}
+	header .interieur nav ul {
+		margin-top: 15px;
+	}
+}
+
+@media all and (max-width:600px) {
+	header .interieur nav {
+		float : none;
+	}
+	footer .interieur img {
+		height: 25px;
+	}
+	footer .interieur p {
+		margin-top: 1px;
+		font-size : 0.8em;
+	}
+	section #articleIndex {
+		margin-left: 15%;
+		width: 70%;
+		margin-bottom: 40px;
+	}
+	section #asideIndex {
+		margin-left: 15%;
+		width: 70%;
+	}
+	header .interieur nav ul {
+		margin-top: 0px;
+	}
+}
+
+@-webkit-keyframes slide-in-bck-center {
+ 0% {
+ -webkit-transform: translateZ(600px);
+ transform: translateZ(600px);
+ opacity: 0;
+}
+ 100% {
+ -webkit-transform: translateZ(0);
+ transform: translateZ(0);
+ opacity: 1;
+}
+}
+@keyframes slide-in-bck-center {
+ 0% {
+ -webkit-transform: translateZ(600px);
+ transform: translateZ(600px);
+ opacity: 0;
+}
+ 100% {
+ -webkit-transform: translateZ(0);
+ transform: translateZ(0);
+ opacity: 1;
+}
+}
